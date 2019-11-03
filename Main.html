@@ -14,44 +14,50 @@
 	</style>
 </head>
 <body>
-	<nav id="sticky-nav-id" class="navbar navbar-expand-lg navbar navbar-dark bg-dark sticky-top">
-		<img id="logo-image" src="image/shoe_logo.gif" style="height: 10vh; padding-right: 1em">
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">HOME</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">SNEAKERS</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">BOOTS</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">SNEAKERS</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">SNEAKERS</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">SNEAKERS</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">SNEAKERS</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">SNEAKERS</a>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			</form>
-		</div>
-	</nav>
+<nav id="sticky-nav-id" class="navbar navbar-expand-lg navbar navbar-dark bg-dark sticky-top">
+	<img id="logo-image" src="image/shoe_logo.gif" style="height: 10vh; padding-right: 1em">
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#" style="font-weight: bold">HOME </a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#" style="font-weight: bold">BOOTS</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#" style="font-weight: bold;">SNEAKERS</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+			</li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	</div>
+</nav>
 
 	<script type="text/javascript">
 		$(document).ready(function () {
+        });
+
+        $(".nav-link").hover(function () {
+            $(this).css("color", "yellow");
+        }, function () {
+            $(this).css("color", "");
         });
 	</script>
 </body>
