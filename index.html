@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Company name</title>
+    <link rel="icon" href="image/ico.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/simple-sidebar.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            background-image: url("image/10_2560_1600.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+<nav id="sticky-nav-id" class="navbar navbar-expand-lg navbar navbar-dark bg-dark sticky-top">
+    <img id="logo-image" src="image/shoe_logo.gif" style="height: 10vh; padding-right: 1em">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="font-weight: bold">HOME </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="font-weight: bold">BOOTS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="font-weight: bold;">SNEAKERS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="border-right col-md-3" id="sidebar-wrapper">
+        <a href="#">Prince Harry is using our shoe</a>
+        <a href="#">Grand Fashion show with latest model</a>
+        <a href="#">Worlds second most favorite brand is us now</a>
+    </div>
+
+    <div id="page-content-wrapper">
+
+        <div class="container-fluid">
+            <h1 class="mt-4">Simple Sidebar</h1>
+            <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on
+                larger screens. When toggled using the button below, the menu will change.</p>
+            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is
+                optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which
+                will toggle the menu when clicked.</p>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+    });
+
+    $(".nav-link").hover(function () {
+        $(this).css("color", "yellow");
+    }, function () {
+        $(this).css("color", "");
+    });
+</script>
+
+</body>
+
+</html>
