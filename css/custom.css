@@ -4,3 +4,9 @@
     font-size: larger;
     background-color: #aaaaaa;
 }
+
+.footer {
+    background: black;
+    border-radius: 20px;
+}
+

@@ -7,6 +7,7 @@
 	<link href="css/custom.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
 	<style type="text/css">
 		body {
 			background-image: url("image/10_2560_1600.jpg");
@@ -25,9 +26,9 @@
 	</style>
 </head>
 <body>
-<nav id="sticky-nav-id" class="navbar navbar-expand-lg navbar navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark sticky-top" id="sticky-nav-id" style="height: 10vh">
 	<a href="Main.html">
-		<img id="logo-image" src="image/LOGO/LOGO_4.png" style="height: 10vh; padding-right: 1em">
+		<img id="logo-image" src="image/LOGO/Black-Transparent.png" style="height: 9vh; padding-right: 1em">
 	</a>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
@@ -184,31 +185,116 @@
 	</div>
 
 	<div class="col-md-2"></div>
+</div>
 
-	<div class="row">
-		<div class="col-md-4"></div>
+<div class="row">
+	<div class="col-md-4"></div>
 
-		<div class="col-md-2 image-holder">
-			<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/hybrid_1.jpeg"
-				 style="width: inherit">
-			<a class="category-image-label" href="oxford.html">
-				<label class="category-image-label">HYBRID</label>
-			</a>
-		</div>
-		<div class="col-md-2 image-holder">
-			<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/woman_shoes.jpg"
-				 style="width: inherit">
-			<a class="category-image-label" href="oxford.html">
-				<label class="category-image-label">WOMEN'S SPECIAL</label>
-			</a>
-		</div>
-
-		<div class="col-md-4"></div>
+	<div class="col-md-2 image-holder">
+		<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/hybrid_1.jpeg"
+			 style="width: inherit">
+		<a class="category-image-label" href="oxford.html">
+			<label class="category-image-label">HYBRID</label>
+		</a>
 	</div>
+	<div class="col-md-2 image-holder">
+		<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/woman_shoes.jpg"
+			 style="width: inherit">
+		<a class="category-image-label" href="oxford.html">
+			<label class="category-image-label">WOMEN'S SPECIAL</label>
+		</a>
+	</div>
+
+	<div class="col-md-4"></div>
+</div>
+
+<div class="row" style="height: 4em"></div>
+
+<div class="row footer" style="color: aliceblue; padding-top: 2em;">
+	<div class="col-md-1"></div>
+
+	<div class="col-md-2">
+		<div style="font-family: 'SansSerif'; font-size: xx-large; font-weight: bolder; width: inherit; text-align: center">
+			PADUKA
+		</div>
+		<div style="width: inherit; text-align: center">Handmade Luxury Fits Only You</div>
+	</div>
+	<div class="col-md-2">
+		<div style="height: inherit;font-weight: bolder; font-style: italic; font-size: larger">
+			Categories we offer
+		</div>
+		<div style="height: inherit">
+			<ul>
+				<li>Oxford</li>
+				<li>Wingtips</li>
+				<li>Loafer</li>
+				<li>Moccasins</li>
+				<li>Boatshoes</li>
+				<li>Chelsea</li>
+				<li>Combat</li>
+				<li>Hiking</li>
+				<li>Hybrid</li>
+				<li>Women's Specail</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-md-2">
+		<div style="width: inherit; font-size: larger; font-weight: bolder">
+			SOCIAL MEDIA
+		</div>
+		<div style="width: inherit;">
+			<ul style="list-style: none;">
+				<li>
+					<a href="http://www.facebook.com" target="_blank">
+						<img src="image/social_media/facebook_icon.png" style="width: 5em">
+					</a>
+				</li>
+				<li>
+					<a href="http://www.youtube.com" target="_blank">
+						<img src="image/social_media/youtube_icon.png" style="width: 5em"/>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-md-2">
+		<div style="width: inherit; font-size: larger; font-weight: bolder">
+			We Accept
+		</div>
+		<div style="width: inherit;">
+			<ul style="list-style: none;">
+				<li>
+					<img src="image/payment_method/visa.png" style="width: 4em">
+				</li>
+				<li>
+					<img src="image/payment_method/visa%20_electron.png" style="width: 4em">
+				</li>
+				<li>
+					<img src="image/payment_method/master_card.png" style="width: 4em">
+				</li>
+				<li>
+					<img src="image/payment_method/paypal.png" style="width: 4em">
+				</li>
+				<li>
+					<img src="image/payment_method/american_express.png" style="width: 4em">
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-md-2" style="position: relative">
+		<div style="font-family: monospace">
+			2019 © PADUKA. All Rights Reserved
+		</div>
+	</div>
+
+	<div class="col-md-1"></div>
+	<hr style="color: green"/>
+</div>
 
 	<script type="text/javascript">
 		$(document).ready(function () {
-
+			var currentYear;
+			$("#copyright").val()
 		});
 
 		$('.carousel').carousel({
