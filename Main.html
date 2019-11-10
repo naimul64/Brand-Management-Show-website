@@ -61,6 +61,9 @@
 			<li class="nav-item">
 				<a class="nav-link" href="#" style="font-weight: bold">HYBRID</a>
 			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="font-weight: bold">WOMEN'S SPECIAL</a>
+			</li>
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -114,38 +117,108 @@
 </div>
 
 <div class="row">
-	<div class="col-md-1"></div>
+	<div class="col-md-2"></div>
+
 	<div class="col-md-2 image-holder">
-		<a href="oxford.html">
-			<img alt="oxford" src="image/categories/oxford.jpeg" style="width: inherit">
+		<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/oxford.jpeg"
+			 style="width: inherit">
+		<a class="category-image-label" href="oxford.html">
+			<label class="category-image-label">OXFORD</label>
 		</a>
-		<label class="category-image-label">OXFORD</label>
 	</div>
 	<div class="col-md-2 image-holder">
-		<img src="image/categories/oxford.jpeg" style="width: inherit" alt="oxford">
+		<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/wingtips.jpg"
+			 style="width: inherit">
+		<a class="category-image-label" href="oxford.html">
+			<label class="category-image-label">WINGTIPS</label>
+		</a>
 	</div>
 	<div class="col-md-2 image-holder">
-		<img src="image/categories/oxford.jpeg" style="width: inherit" alt="oxford">
+		<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/loafer.jpeg"
+			 style="width: inherit">
+		<a class="category-image-label" href="oxford.html">
+			<label class="category-image-label">LOAFERS</label>
+		</a>
 	</div>
 	<div class="col-md-2 image-holder">
-		<img src="image/categories/oxford.jpeg" style="width: inherit" alt="oxford">
+		<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/moccacins.jpg"
+			 style="width: inherit">
+		<a class="category-image-label" href="oxford.html">
+			<label class="category-image-label">MOCCASINS</label>
+		</a>
 	</div>
-	<div class="col-md-1"></div>
+
+	<div class="col-md-2"></div>
 </div>
 
-<script type="text/javascript">
-	$(document).ready(function () {
+<div class="row">
+	<div class="col-md-2"></div>
 
-	});
+	<div class="col-md-2 image-holder">
+		<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/boat_shoe.jpg"
+			 style="width: inherit">
+		<a class="category-image-label" href="oxford.html">
+			<label class="category-image-label">BOAT SHOE</label>
+		</a>
+	</div>
+	<div class="col-md-2 image-holder">
+		<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/chelsae.JPG"
+			 style="width: inherit">
+		<a class="category-image-label" href="oxford.html">
+			<label class="category-image-label">CHELSEA</label>
+		</a>
+	</div>
+	<div class="col-md-2 image-holder">
+		<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/combat.jpg"
+			 style="width: inherit">
+		<a class="category-image-label" href="oxford.html">
+			<label class="category-image-label">COMBAT</label>
+		</a>
+	</div>
+	<div class="col-md-2 image-holder">
+		<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/hiking.jpg"
+			 style="width: inherit">
+		<a class="category-image-label" href="oxford.html">
+			<label class="category-image-label">HIKING</label>
+		</a>
+	</div>
 
-	$('.carousel').carousel({
-		interval: 1500
-	});
-	$(".nav-link").hover(function () {
-		$(this).css("color", "yellow");
-	}, function () {
-		$(this).css("color", "");
-	});
+	<div class="col-md-2"></div>
+
+	<div class="row">
+		<div class="col-md-4"></div>
+
+		<div class="col-md-2 image-holder">
+			<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/hybrid_1.jpeg"
+				 style="width: inherit">
+			<a class="category-image-label" href="oxford.html">
+				<label class="category-image-label">HYBRID</label>
+			</a>
+		</div>
+		<div class="col-md-2 image-holder">
+			<img alt="oxford" onclick="location.href='oxford.html'" src="image/categories/woman_shoes.jpg"
+				 style="width: inherit">
+			<a class="category-image-label" href="oxford.html">
+				<label class="category-image-label">WOMEN'S SPECIAL</label>
+			</a>
+		</div>
+
+		<div class="col-md-4"></div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+		});
+
+		$('.carousel').carousel({
+			interval: 1500
+		});
+		$(".nav-link").hover(function () {
+			$(this).css("color", "yellow");
+		}, function () {
+			$(this).css("color", "");
+		});
 </script>
 </body>
 </html>
