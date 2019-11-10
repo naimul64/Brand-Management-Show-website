@@ -4,6 +4,7 @@
 	<title>PADUKA (Handmade luxury that fits only you)</title>
 	<link rel="icon" href="image/ico.ico">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="css/custom.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<style type="text/css">
@@ -25,32 +26,40 @@
 </head>
 <body>
 <nav id="sticky-nav-id" class="navbar navbar-expand-lg navbar navbar-dark bg-dark sticky-top">
-	<a href="Main.html"><img id="logo-image" src="image/LOGO/LOGO_2.png" style="height: 10vh; padding-right: 1em"/></a>
+	<a href="Main.html">
+		<img id="logo-image" src="image/LOGO/LOGO_4.png" style="height: 10vh; padding-right: 1em">
+	</a>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="Main.html" style="font-weight: bold">HOME</a>
+				<a class="nav-link" href="Main.html" style="font-weight: bold">HOME </a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="elements_with_side_bar.html" style="font-weight: bold">SNEAKERS</a>
+			<li class="nav-item">
+				<a class="nav-link" href="oxford.html" style="font-weight: bold">OXFORD</a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="#" style="font-weight: bold">BOOTS</a>
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="font-weight: bold">WINGTIPS</a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="#" style="font-weight: bold;">SNEAKERS</a>
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="font-weight: bold;">LOAFERS</a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="font-weight: bold">MOCCASINS</a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="font-weight: bold">BOAT SHOES</a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="font-weight: bold">CHELSEA</a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="#" style="font-weight: bold">SNEAKERS</a>
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="font-weight: bold">COMBAT</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="font-weight: bold">HIKING</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="font-weight: bold">HYBRID</a>
 			</li>
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
@@ -106,19 +115,19 @@
 
 <div class="row">
 	<div class="col-md-1"></div>
-	<div class="col-md-2">
+	<div class="col-md-2 image-holder">
+		<a href="oxford.html">
+			<img alt="oxford" src="image/categories/oxford.jpeg" style="width: inherit">
+		</a>
+		<label class="category-image-label">OXFORD</label>
+	</div>
+	<div class="col-md-2 image-holder">
 		<img src="image/categories/oxford.jpeg" style="width: inherit" alt="oxford">
 	</div>
-	<div class="col-md-2">
+	<div class="col-md-2 image-holder">
 		<img src="image/categories/oxford.jpeg" style="width: inherit" alt="oxford">
 	</div>
-	<div class="col-md-2">
-		<img src="image/categories/oxford.jpeg" style="width: inherit" alt="oxford">
-	</div>
-	<div class="col-md-2">
-		<img src="image/categories/oxford.jpeg" style="width: inherit" alt="oxford">
-	</div>
-	<div class="col-md-2">
+	<div class="col-md-2 image-holder">
 		<img src="image/categories/oxford.jpeg" style="width: inherit" alt="oxford">
 	</div>
 	<div class="col-md-1"></div>
@@ -126,8 +135,12 @@
 
 <script type="text/javascript">
 	$(document).ready(function () {
+
 	});
 
+	$('.carousel').carousel({
+		interval: 1500
+	});
 	$(".nav-link").hover(function () {
 		$(this).css("color", "yellow");
 	}, function () {
