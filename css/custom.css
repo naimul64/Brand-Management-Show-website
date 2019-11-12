@@ -20,3 +20,14 @@
     cursor: pointer;
     transition: 0.3s;
 }
+
+.side-bar {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2em;
+    font-family: SansSerif;
+}
+
+.side-bar a {
+    color: black;
+    font-size: large;
+}

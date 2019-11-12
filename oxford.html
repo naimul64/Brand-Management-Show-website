@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-    <title>Company name</title>
+    <title>PADUKA - Oxford</title>
     <link rel="icon" href="image/ico.ico">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!--Animation documentation
     https://github.com/daneden/animate.css/blob/master/animate.min.css-->
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link rel="stylesheet" type="text/css" href="css/simple-sidebar.css">
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
     <style type="text/css">
         body {
             background-image: url("image/10_2560_1600.jpg");
@@ -22,7 +24,7 @@
 <body>
 <nav id="sticky-nav-id" class="navbar navbar-expand-lg navbar navbar-dark bg-dark sticky-top">
     <a href="Main.html">
-        <img id="logo-image" src="image/LOGO/LOGO_4.png" style="height: 10vh; padding-right: 1em">
+        <img id="logo-image" src="image/LOGO/LOGO_5.png" style="height: 10vh; padding-right: 1em">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -33,28 +35,31 @@
                 <a class="nav-link active" href="oxford.html" style="font-weight: bold">OXFORD</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="font-weight: bold">WINGTIPS</a>
+                <a class="nav-link" href="wingtips.html" style="font-weight: bold">WINGTIPS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="font-weight: bold;">LOAFERS</a>
+                <a class="nav-link" href="loafters.html" style="font-weight: bold;">LOAFERS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="font-weight: bold">MOCCASINS</a>
+                <a class="nav-link" href="moccasins.html" style="font-weight: bold">MOCCASINS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="font-weight: bold">BOAT SHOES</a>
+                <a class="nav-link" href="boatshoes.html" style="font-weight: bold">BOAT SHOES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="font-weight: bold">CHELSEA</a>
+                <a class="nav-link" href="chelsea.html" style="font-weight: bold">CHELSEA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="font-weight: bold">COMBAT</a>
+                <a class="nav-link" href="combat.html" style="font-weight: bold">COMBAT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="font-weight: bold">HIKING</a>
+                <a class="nav-link" href="hiking.html" style="font-weight: bold">HIKING</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="font-weight: bold">HYBRID</a>
+                <a class="nav-link" href="hybrid.html" style="font-weight: bold">HYBRID</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="womensspecial.html" style="font-weight: bold">WOMEN'S SPECIAL</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -64,31 +69,172 @@
     </div>
 </nav>
 
+<div class="container-fluid">
+    <div class="d-flex" id="wrapper">
 
-<div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="border-right col-md-3 side-bar" id="sidebar-wrapper">
+            <h4>Category</h4>
+            <table class="table table-bordered">
+                <tbody>
+                <tr>
+                    <td>
+                        <a href="oxford.html">Oxford</a>
+                    </td>
+                </tr>
 
-    <!-- Sidebar -->
-    <div class="border-right col-md-3" id="sidebar-wrapper" style="height: 100vh">
-        <div class="list-group list-group-flush animated infinite rollIn delay-2s slower">
-            <a href="#">Prince Harry is using our shoe</a>
-            <a href="#">Grand Fashion show with latest model</a>
-            <a href="#">Worlds second most favorite brand is us now</a>
+                <tr>
+                    <td>
+                        <a href="oxford.html">Wingtips</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="oxford.html">Loafers</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="oxford.html">Moccasins</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="oxford.html">Boat Shoes</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="oxford.html">Chelsea</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="oxford.html">Combat</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="oxford.html">Hiking</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="oxford.html">Hybrid</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="oxford.html">Women's Special</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
+
+        <div id="page-content-wrapper">
+
+            <div class="container-fluid">
+                <h1 class="mt-4">Simple Sidebar</h1>
+                <p>The starting state of the menu will appear collapsed on smaller screens, and will appear
+                    non-collapsed on
+                    larger screens. When toggled using the button below, the menu will change.</p>
+                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is
+                    optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID
+                    which
+                    will toggle the menu when clicked.</p>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
     </div>
 
-    <div id="page-content-wrapper">
+    <div class="row footer" style="color: aliceblue; padding-top: 2em;">
+        <div class="col-md-1"></div>
 
-        <div class="container-fluid">
-            <h1 class="mt-4">Simple Sidebar</h1>
-            <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on
-                larger screens. When toggled using the button below, the menu will change.</p>
-            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is
-                optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which
-                will toggle the menu when clicked.</p>
+        <div class="col-md-2">
+            <div style="font-family: 'SansSerif'; font-size: xx-large; font-weight: bolder; width: inherit; text-align: center">
+                PADUKA
+            </div>
+            <div style="width: inherit; text-align: center">Handmade Luxury Fits Only You</div>
         </div>
-    </div>
-    <!-- /#page-content-wrapper -->
+        <div class="col-md-2">
+            <div style="height: inherit;font-weight: bolder; font-style: italic; font-size: larger">
+                Categories we offer
+            </div>
+            <div style="height: inherit">
+                <ul>
+                    <li>Oxford</li>
+                    <li>Wingtips</li>
+                    <li>Loafer</li>
+                    <li>Moccasins</li>
+                    <li>Boatshoes</li>
+                    <li>Chelsea</li>
+                    <li>Combat</li>
+                    <li>Hiking</li>
+                    <li>Hybrid</li>
+                    <li>Women's Specail</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div style="width: inherit; font-size: larger; font-weight: bolder">
+                SOCIAL MEDIA
+            </div>
+            <div style="width: inherit;">
+                <ul style="list-style: none;">
+                    <li>
+                        <a href="http://www.facebook.com" target="_blank">
+                            <img src="image/social_media/facebook_icon.png" style="width: 5em">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.youtube.com" target="_blank">
+                            <img src="image/social_media/youtube_icon.png" style="width: 5em"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div style="width: inherit; font-size: larger; font-weight: bolder">
+                We Accept
+            </div>
+            <div style="width: inherit;">
+                <ul style="list-style: none;">
+                    <li>
+                        <img src="image/payment_method/visa.png" style="width: 4em">
+                    </li>
+                    <li>
+                        <img src="image/payment_method/visa%20_electron.png" style="width: 4em">
+                    </li>
+                    <li>
+                        <img src="image/payment_method/master_card.png" style="width: 4em">
+                    </li>
+                    <li>
+                        <img src="image/payment_method/paypal.png" style="width: 4em">
+                    </li>
+                    <li>
+                        <img src="image/payment_method/american_express.png" style="width: 4em">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2" style="position: relative">
+            <div style="width: inherit; font-size: larger; font-weight: bolder">
+                <a href="about_us.html" style="color: white">About Us</a>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            <div style="font-family: monospace; font-weight: bold">
+                2019 © PADUKA. All Rights Reserved
+            </div>
+        </div>
 
+        <div class="col-md-1"></div>
+    </div>
 </div>
 
 <script type="text/javascript">
