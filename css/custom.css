@@ -72,3 +72,15 @@ body {
     width: inherit;
     text-align: center;
 }
+
+.footer-header {
+    width: inherit;
+    font-size: larger;
+    font-weight: bolder
+}
+
+.white-hr {
+    border-color: white;
+    background-color: white;
+    color: white;
+}
