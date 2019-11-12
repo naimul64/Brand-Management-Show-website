@@ -1,3 +1,19 @@
+body {
+    background-image: url("../image/10_2560_1600.jpg");
+    background-size: cover;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-caption {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
 .category-image-label {
     width: inherit;
     text-align: center;
@@ -39,4 +55,20 @@
 .menu-link div {
     height: 100%;
     width: 100%
+}
+
+.category-sample img {
+    width: inherit;
+    padding: 1px;
+    border: 1px solid #021a40;
+}
+
+.bordered-image {
+    padding: 1px;
+    border: 1px solid #021a40;
+}
+
+.category-sample span {
+    width: inherit;
+    text-align: center;
 }
