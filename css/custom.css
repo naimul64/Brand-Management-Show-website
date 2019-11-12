@@ -31,3 +31,12 @@
     color: black;
     font-size: large;
 }
+
+.menu-link :hover {
+    font-weight: bold;
+}
+
+.menu-link div {
+    height: 100%;
+    width: 100%
+}
