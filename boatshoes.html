@@ -32,7 +32,7 @@
                 <a class="nav-link" href="Main.html" style="font-weight: bold">HOME </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="oxford.html" style="font-weight: bold">OXFORD</a>
+                <a class="nav-link" href="oxford.html" style="font-weight: bold">OXFORD</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="wingtips.html" style="font-weight: bold">WINGTIPS</a>
@@ -44,7 +44,7 @@
                 <a class="nav-link" href="moccasins.html" style="font-weight: bold">MOCCASINS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="boatshoes.html" style="font-weight: bold">BOAT SHOES</a>
+                <a class="nav-link active" href="boatshoes.html" style="font-weight: bold">BOAT SHOES</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="chelsea.html" style="font-weight: bold">CHELSEA</a>
@@ -155,54 +155,9 @@
 
         <div class="col-md-9 col-12" id="page-content-wrapper">
 
-            <div class="col-10 customized-order-div">
-                <br/>
-                <h4>Customized Order</h4>
-                <hr/>
-                <form id="order-form" style="padding-top: 1em">
-                    <div class="form-group row">
-                        <label for="order-name" class="col-sm-3 col-form-label">Your Name</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="order-name" placeholder="Your Name" required>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="order-contact" class="col-sm-3 col-form-label">Your Contact</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="order-contact" placeholder="Your Contact"
-                                   required>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
-                        <div class="col-sm-9">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="address" class="col-sm-3 col-form-label">Your Address</label>
-                        <div class="col-sm-9">
-                            <textarea type="text" class="form-control" id="address" placeholder="Address"
-                                      required></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="address" class="col-sm-3 col-form-label">Short Description</label>
-                        <div class="col-sm-9">
-                            <textarea type="text" class="form-control" id="short-description"
-                                      placeholder="Write small description of your demand."
-                                      required></textarea>
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-secondary"
-                            ONCLICK="resetForm(document.getElementById('order-form'))">Reset
-                    </button>
-                    <button type="button" class="btn btn-primary" onclick="placeOrder()">Place Order</button>
-                </form>
-
-                <div class="" id="response-alert"></div>
+            <div>
+                <h1>Page Under Construction</h1>
             </div>
-
         </div>
         <!-- /#page-content-wrapper -->
 
@@ -300,6 +255,65 @@
     </div>
 </div>
 
+
+<!-- Modal here  -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true" id="showViewOrderModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Place Order</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <img id="order-image" src="image/categories/oxford/oxford_1.jpg"><br/>
+                </div>
+                <form id="order-form" style="padding-top: 1em">
+                    <div class="form-group row">
+                        <label for="order-name" class="col-sm-2 col-form-label">Your Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="order-name" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="order-contact" class="col-sm-2 col-form-label">Your Contact</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="order-contact" placeholder="Your Contact"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="address" class="col-sm-2 col-form-label">Your Address</label>
+                        <div class="col-sm-10">
+                            <textarea type="email" class="form-control" id="address" placeholder="Address"
+                                      required></textarea>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="placeOrder()">Place Order</button>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <div hidden id="order-successful-alert" class="alert alert-success"
+                     style="width: inherit; font-size: large; font-weight: bold">Your Order Is Placed. We will contact
+                    you in short time.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script type="text/javascript">
     $(document).ready(function () {
     });
@@ -309,6 +323,16 @@
     }, function () {
         $(this).css("color", "");
     });
+
+    function showImageModal(element) {
+        var imageSrc = element.parentNode.getElementsByTagName('img')[0].src;
+        document.getElementById('order-image').src = imageSrc;
+
+        $("#showViewOrderModal").modal('show');
+        resetForm(document.getElementById('order-form'));
+        $('#order-successful-alert').prop('hidden', true);
+    }
+
 
     function resetForm(form) {
         // clearing inputs
@@ -352,21 +376,11 @@
     }
 
     function placeOrder() {
-        $('#response-alert').removeClass();
         if (validateForm()) {
-            $('#response-alert').addClass('alert alert-success');
-            $('#response-alert').html("Your order is placed. Order id: " + getRandomInt(100000, 999999) + "<br/>" + "You will be contacted soon.")
-        } else {
-            $('#response-alert').addClass('alert alert-danger');
-            $('#response-alert').html("Please fill up all fields");
+            $('#order-successful-alert').prop('hidden', false)
         }
     }
 
-    function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
 </script>
 
 </body>
